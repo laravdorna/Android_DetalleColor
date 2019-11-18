@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">pruebaAnko</string>
+    <string name="action_settings">Settings</string>
+    <string name="amarillo">amarillo</string>
+    <string name="rojo">rojo</string>
+    <string name="saludo">Saludo</string>
+    <string name="estas_en_detalle">estas en detalle</string>
+    <string name="textview">TextView</string>
+</resources>
