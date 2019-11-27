@@ -36,10 +36,9 @@
         android:id="@+id/bt_saludo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:text="@string/saludo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -87,12 +86,10 @@
         android:id="@+id/txt_mas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="211dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="18dp"
         android:text="@string/mas"
         android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/txt_sumb"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_s" />
 
@@ -100,10 +97,12 @@
         android:id="@+id/btn_sumar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="48dp"
         android:text="@string/sumar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toEndOf="@+id/txt_Res"
         app:layout_constraintTop_toBottomOf="@+id/txt_sumb" />
 
     <TextView
@@ -111,7 +110,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:text="@string/resultado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_suma" />
@@ -131,40 +130,26 @@
         android:layout_height="31dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
-        android:autofillHints=""
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toStartOf="@+id/txt_mas"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_s"
-        tools:targetApi="o" />
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/txt_sumb"
-        android:layout_width="0dp"
+        android:layout_width="119dp"
         android:layout_height="31dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="49dp"
-        android:autofillHints=""
+        android:layout_marginEnd="50dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/txt_mas"
         app:layout_constraintTop_toBottomOf="@+id/txt_s"
-        tools:targetApi="o" />
-
-    <Button
-        android:id="@+id/btn_camara"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="5dp"
-        android:text="@string/camara"
-        app:layout_constraintEnd_toEndOf="@+id/bt_amarillo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:autofillHints="" tools:targetApi="o"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

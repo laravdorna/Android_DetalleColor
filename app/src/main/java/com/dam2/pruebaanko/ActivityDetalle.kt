@@ -15,12 +15,25 @@ class ActivityDetalle : AppCompatActivity() {
         val valor = intent.getStringExtra("color")
         txt_color.setText(valor)
 
-        //CAMBIA EL COLOR DEL TEXTO
+        /*CAMBIA EL COLOR DEL TEXTO
         if (valor == "amarillo"){
             txt_color.setTextColor(Color.YELLOW)
         } else if (valor == "rojo"){
 
             txt_color.setTextColor(Color.RED)
+        }
+        */
+        when (valor) {
+            "amarillo" -> {
+                txt_color.setTextColor(Color.YELLOW)
+            }
+            "rojo" -> {
+                txt_color.setTextColor(Color.RED)
+            }
+        }
+
+        btn_volver.setOnClickListener {
+            finish()
         }
 
 
